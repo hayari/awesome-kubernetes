@@ -14,6 +14,8 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          CUSTOM_DOMAIN: redhatspain.com
+          CUSTOM_DOMAIN: nubenetes.com
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+          EXTRA_PACKAGES: build-base
+          REQUIREMENTS: requirements.txt
 
